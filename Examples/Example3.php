@@ -18,9 +18,8 @@ echo "Precio total: ". $precioTotal . " (Origin)";
 exit;
 
 //Example 3, Refactory
-$orden = new Orden(5, 500, 80);
-$cargo = new Cargo(0.9, 50);
-$precioTotal = (new Refactory_3($orden, $cargo))->execute();
+
+$precioTotal = (new Refactory_3())->execute();
 echo "Precio total: ". $precioTotal . " (Refactory)";
 exit;
 
