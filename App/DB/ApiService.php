@@ -6,7 +6,7 @@ namespace App\DB;
 
 final class ApiService
 {
-    public function get(): array
+    public function getPosts(): array
     {
         return [
             ['id' => 1, 'nombre' =>  'post', 'descripcion' => 'probado', 'published' => true],

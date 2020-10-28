@@ -6,9 +6,9 @@ use App\DB\ApiService;
 
 class Origin_1
 {
-    public function excecute()
+    public function excecute(): array
     {
-        $posts = ApiService::get();
+        $posts = ApiService::getPosts();
 
         if (!empty($posts)) {
             $result = [];
