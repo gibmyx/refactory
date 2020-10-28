@@ -6,7 +6,7 @@ use App\DB\ApiService;
 
 class Origin_1
 {
-    public function excecute(): array
+    public function execute(): array
     {
         $posts = ApiService::getPosts();
 

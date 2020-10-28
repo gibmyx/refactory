@@ -6,7 +6,7 @@ use Exception;
 
 class Origin_2
 {
-    public function excecute(array $form)
+    public function execute(array $form)
     {
         if(isset($form['email'])){
             if (isset($form['salary'])){

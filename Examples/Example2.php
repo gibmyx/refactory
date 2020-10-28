@@ -7,7 +7,7 @@ use App\Refactory\Refactory_2;
 //one
 try {
     $formMale = (new Request())->getFormRequestMale();
-    (new Origin_2())->excecute($formMale);
+    (new Origin_2())->execute($formMale);
 } catch (\Exception $e) {
     echo $e->getMessage();
     exit;
@@ -16,7 +16,7 @@ try {
 //two
 try {
     $formFemale = (new Request())->getFormRequestFemale();
-    (new Origin_2())->excecute($formFemale);
+    (new Origin_2())->execute($formFemale);
 } catch (\Exception $e) {
     echo $e->getMessage();
     exit;
@@ -25,7 +25,7 @@ try {
 //three
 try {
     $formError = (new Request())->getFormRequestError();
-    (new Origin_2())->excecute($formError);
+    (new Origin_2())->execute($formError);
 } catch (\Exception $e) {
     echo $e->getMessage();
     exit;
@@ -36,7 +36,7 @@ try {
 //one
 try {
     $formMale = (new Request())->getFormRequestMale();
-    (new Refactory_2($formMale))->excecute();
+    (new Refactory_2($formMale))->execute();
 } catch (\Exception $e) {
     echo $e->getMessage();
     exit;
@@ -45,7 +45,7 @@ try {
 //two
 try {
     $formFemale = (new Request())->getFormRequestFemale();
-    (new Refactory_2($formFemale))->excecute();
+    (new Refactory_2($formFemale))->execute();
 } catch (\Exception $e) {
     echo $e->getMessage();
     exit;
@@ -54,7 +54,7 @@ try {
 //three
 try {
     $formError = (new Request())->getFormRequestError();
-    (new Refactory_2($formError))->excecute();
+    (new Refactory_2($formError))->execute();
 } catch (\Exception $e) {
     echo $e->getMessage();
     exit;

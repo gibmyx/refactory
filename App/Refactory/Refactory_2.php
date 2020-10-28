@@ -13,7 +13,7 @@ class Refactory_2
         $this->form = $form;
     }
 
-    public function excecute()
+    public function execute()
     {
         if(!isset($this->form['email']))
             throw new Exception( 'no se encuentra el email' );

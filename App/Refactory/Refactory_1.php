@@ -6,7 +6,7 @@ use App\DB\ApiService;
 
 class Refactory_1
 {
-    public function excecute(): array
+    public function execute(): array
     {
         return array_filter(
             $this->getPosts(), function ($post) {
